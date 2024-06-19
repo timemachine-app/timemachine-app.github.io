@@ -35,10 +35,13 @@
             <span class="action-text">join our waitlist</span>
         </div>
         <div class="form-container">
-            <div class="signup-form">
-                <input type="email" placeholder="Your email address">
-                <button onclick="alert('Email submitted!')">Join the waitlist →</button>
-            </div>
+            <form class="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbwzvPZ2BxBHSlFk4YcVzN-10ZucYHXs9CJ6lC5yhWy17TI-zTx2QCMoAa_9_GhuvEfb/exec" target="hidden_iframe" onsubmit="submitted=true; showLoading();">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit" id="submit-btn">Join the waitlist →</button>
+                <div id="loading-icon" class="success-text" style="display:none;">Loading...</div>
+                <div id="success-message" class="success-text" style="display:none;">You are in.</div>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { hideLoading(); showThankYouMessage(); }"></iframe>
         </div>
         <div class="additional-text">capture - let ai create actionable tasks and notes - export to your fav app</div>
         <picture class="concept-container">
@@ -47,5 +50,19 @@
                 <img class="concept-image" src="assets/concept.png" alt="Concept">
         </picture>
     </div>
+    <script>
+        var submitted = false;
+        function showLoading() {
+            document.getElementById('submit-btn').disabled = true;
+            document.getElementById('loading-icon').style.display = 'inline';
+        }
+        function hideLoading() {
+            document.getElementById('submit-btn').disabled = false;
+            document.getElementById('loading-icon').style.display = 'none';
+        }
+        function showThankYouMessage() {
+            document.getElementById('success-message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>

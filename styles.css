@@ -95,6 +95,13 @@ button:hover {
     background-color: #00B2FF;
 }
 
+.success-text {
+    width: 100%;
+    margin-top: 10px;
+    color: #FF6B6B;
+    text-align: center;
+}
+
 .concept-container {
     display: flex;
     justify-content: center;
