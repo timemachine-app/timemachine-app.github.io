@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: 70px 70px;
+    background-image: radial-gradient(circle, rgba(0, 178, 255, 0.3) 3px, #F0F0F0 1px);
+    background-repeat: repeat;
+    font-family: 'Anton', 'Montserrat', sans-serif;
+    position: relative; /* This ensures the logo can be absolutely positioned relative to the body */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px; /* Set a max-width for the main container */
+    padding: 20px; /* Padding around the main container */
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.title-text {
+    font-size: 30px;
+    letter-spacing: 7px;
+    color: #333333;
+}
+
+.action-text {
+    font-size: 20px;
+    letter-spacing: 7px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.notes-hightlight {
+    background-color: #FF6B6B;
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+.form-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="email"] {
+    height: 50px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px 0px #000;
+}
+
+button {
+    height: 50px;
+    background-color: #00b3ffcc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px #000;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00B2FF;
+}
+
+.concept-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    opacity: 0.95;
+}
+
+.concept-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+.additional-text {
+    text-align: center; /* Optional: centers the text */
+    margin-top: 30px; /* Optional: adds some space above the text */
+    font-size: 18px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 20px;
+    }
+
+    .title-text {
+        font-size: 24px;
+    }
+
+    .action-text {
+        font-size: 18px;
+    }
+
+    .signup-form {
+        width: 90%;
+    }
+
+    .concept-image {
+        width: 45%; /* Larger percentage of width for smaller screens */
+    }
+
+    .additional-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .title-text, .action-text {
+        letter-spacing: 4px;
+    }
+
+    .form-container {
+        margin-top: 40px;
+    }
+
+    .concept-image {
+        width: 45%; /* Even larger percentage for very small screens */
+    }
+
+    .additional-text {
+        font-size: 12px;
+    }
+}
