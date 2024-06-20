@@ -32,20 +32,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-transform: uppercase; */
 }
 
 .title-text {
     font-size: 30px;
     letter-spacing: 7px;
     color: #333333;
+    text-transform: uppercase;
 }
 
 .action-text {
-    font-size: 20px;
-    letter-spacing: 7px;
+    font-size: 18px;
+    letter-spacing: 3px;
     color: #333333;
     margin-top: 20px;
+}
+
+.action-text-hightlight {
+    text-decoration: underline;
 }
 
 .notes-hightlight {
