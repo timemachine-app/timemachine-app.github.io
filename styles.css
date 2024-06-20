@@ -35,6 +35,7 @@ body {
 }
 
 .title-text {
+    margin-top: 10px;
     font-size: 30px;
     letter-spacing: 7px;
     color: #333333;
