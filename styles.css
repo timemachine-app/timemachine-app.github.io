@@ -8,7 +8,7 @@ body {
     background-size: 70px 70px;
     background-image: radial-gradient(circle, rgba(0, 178, 255, 0.3) 3px, #F0F0F0 1px);
     background-repeat: repeat;
-    font-family: 'Anton', 'Montserrat', sans-serif;
+    font-family: 'Poppins', 'Anton', sans-serif;
     position: relative; /* This ensures the logo can be absolutely positioned relative to the body */
 }
 
@@ -37,14 +37,15 @@ body {
 .title-text {
     margin-top: 10px;
     font-size: 30px;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     color: #333333;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .action-text {
     font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #333333;
     margin-top: 20px;
 }
