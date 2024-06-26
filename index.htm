@@ -7,34 +7,33 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
     <link rel="icon" href="assets/timemachine_icon.png" type="image/x-icon">
-
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Time Machine: Fastest way to log your life - time machine is a journaling app that feels more like dm-ing. snap your thoughts, add journal logs and take actions on it. join our waitlist now!">
     <meta name="keywords" content="note-taking, ai notes, actionable tasks, productivity, time machine, fast notes, dm notes">
     <meta name="author" content="time machine">
-    
-    <!-- Open Graph Meta Tags for social media -->
     <meta property="og:title" content="Time Machine: Fastest way to log your life">
-    <meta property="og:description" content="Time Machine: Fastest way to express yourself - snap your thoughts, watch it turn into your life story and take actions on it. join our waitlist now!">
-    <meta property="og:image" content="https://timemachine-app.github.io/assets/metadata_image.png">
+    <meta property="og:description" content="Time Machine is a journaling app that feels like DM-ing yourself. Snap your thoughts, turn them into notes, and take action. Join our waitlist now!">
+    <meta property="og:image" content="https://timemachine-app.github.io/assets/timemachine_icon.png">
     <meta property="og:url" content="https://timemachine-app.github.io">
     <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Time Machine: Fastest way to log your life">
-    <meta name="twitter:description" content="Time Machine: Fastest way to express yourself - snap your thoughts, watch it turn into your life story and take actions on it. join our waitlist now!">
-    <meta name="twitter:image" content="https://timemachine-app.github.io/assets/metadata_image.png">
+    <meta name="twitter:description" content="Time Machine is a journaling app that feels like DM-ing yourself. Snap your thoughts, turn them into notes, and take action. Join our waitlist now!">
+    <meta name="twitter:image" content="https://timemachine-app.github.io/assets/timemachine_icon.png">
 </head>
 <body>
     <div class="main-container">
-        <img src="assets/timemachine_icon.png" class="logo" />
+        <div class="header">
+            <img src="assets/timemachine_icon.png" class="logo" />
+        </div>
         <div class="header-container">
-            <a href="https://www.producthunt.com/posts/time-machine-3?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-time&#0045;machine&#0045;3" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464659&theme=light" alt="Time&#0032;Machine - fastest&#0032;way&#0032;to&#0032;log&#0032;your&#0032;life | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+            <div class="badge-and-concept-container">
+                <a href="https://www.producthunt.com/posts/time-machine-3?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-time&#0045;machine&#0045;3" target="_blank">
+                    <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=464659&theme=light" alt="Time Machine - fastest way to log your life | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+                </a>
+            </div>
             <span class="title-text">fastest way to log your <span class="notes-hightlight">life</span></span>
-            <span class="action-text">journaling app that feels more like sending <span class="action-text-hightlight">dm</span> to yourself</span>
+            <!-- <span class="action-text">Make note taking feel like you are DM-ing yourself.</span> -->
         </div>
         <div class="form-container">
             <form class="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbwztjLGrZ3jf3obgZNNxUWEslFEzwUDD3zqa34HDRDCUF9LqPhHMZ57JMQdU9qlKBG9/exec" target="hidden_iframe" onsubmit="submitted=true; showLoading();">
@@ -45,12 +44,16 @@
             </form>
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { hideLoading(); showThankYouMessage(); }"></iframe>
         </div>
-        <div class="additional-text">Snap your thoughts and watch them turn into notes. Go back in time and reflect on them using AI.</div>
-        <picture class="concept-container">
-                <source media="(max-width: 480px)" srcset="assets/concept-mobile.png">
-                <source media="(max-width: 768px)" srcset="assets/concept-mobile.png">
-                <img class="concept-image" src="assets/concept.png" alt="Concept">
-        </picture>
+        <div class="additional-text-header">Features for Everyone:</div>
+        <div class="additional-text-points">1. Dump your thoughts as a snap and get detailed notes of it</div>
+        <div class="additional-text-points">2. Talk with AI and refelct on your past</div>
+        <div class="additional-text-points">3. Export to your favorite apps: Notion, Apple Reminders</div>
+        <div class="additional-text-header">Features for Content Creators:</div>
+        <div class="additional-text-points">1. Turn your thoughts into Podcasts</div>
+        <div class="additional-text-points">2. Get ideas for your next Tiktok or Instagram Reel</div>
+        <div class="additional-text-points">3. Setup workflows to daily post your thoughts on Twitter, Newsletters and more</div>
+        <div class="additional-text">Watch <a href="https://www.loom.com/share/c71dcf962483413cbe32df23df0ecd25">Loom</a>.</div>
+        <div class="additional-text">Interested in investing? Fill out this <a href="https://forms.gle/M4irDMowjyqoheB88">form</a>.</div>
     </div>
     <script>
         var submitted = false;

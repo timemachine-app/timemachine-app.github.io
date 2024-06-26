@@ -9,22 +9,30 @@ body {
     background-image: radial-gradient(circle, rgba(0, 178, 255, 0.3) 3px, #F0F0F0 1px);
     background-repeat: repeat;
     font-family: 'Poppins', 'Anton', sans-serif;
-    position: relative; /* This ensures the logo can be absolutely positioned relative to the body */
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* This ensures items are spaced out across the full width */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 0 20px; /* Adds padding on both sides */
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     width: 100px;
-    height: 100px;
+    height: 100px; /* Maintaining the dimensions as provided */
 }
 
 .main-container {
     width: 100%;
-    max-width: 800px; /* Set a max-width for the main container */
-    padding: 20px; /* Padding around the main container */
-    box-sizing: border-box; /* Ensures padding does not affect overall width */
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .header-container {
@@ -41,16 +49,18 @@ body {
     color: #333333;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .action-text {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 2px;
     color: #333333;
     margin-top: 20px;
+    text-align: center;
 }
 
-.action-text-hightlight {
+.action-text-highlight {
     text-decoration: underline;
 }
 
@@ -61,11 +71,12 @@ body {
 }
 
 .form-container {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .signup-form {
@@ -95,6 +106,7 @@ button {
     cursor: pointer;
     box-shadow: 3px 3px 0px 0px #000;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -108,29 +120,36 @@ button:hover {
     text-align: center;
 }
 
-.concept-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    opacity: 0.95;
+.badge-and-concept-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically align items in the middle */
+    justify-content: space-around; /* Evenly space out the child elements */
+    margin-top: 30px; /* Margin to separate from elements above */
 }
 
-.concept-image {
-    width: 100%;
-    max-width: 600px;
+.additional-text-header {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.additional-text {
-    text-align: center; /* Optional: centers the text */
-    margin-top: 30px; /* Optional: adds some space above the text */
+.additional-text-points {
+    text-align: center;
+    margin-bottom:5;
     font-size: 14px;
 }
 
-/* Responsive Media Queries */
+.additional-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
     .header-container {
         padding: 20px;
-        margin-top: 70px;
     }
 
     .title-text {
@@ -143,10 +162,6 @@ button:hover {
 
     .signup-form {
         width: 90%;
-    }
-
-    .concept-image {
-        width: 45%; /* Larger percentage of width for smaller screens */
     }
 
     .additional-text {
@@ -167,14 +182,14 @@ button:hover {
     }
 
     .form-container {
-        margin-top: 30px;
-    }
-
-    .concept-image {
-        width: 45%; /* Even larger percentage for very small screens */
+        margin-top: 0px;
     }
 
     .additional-text {
         font-size: 12px;
     }
+}
+
+.influencer-container {
+    height: 100px;
 }
